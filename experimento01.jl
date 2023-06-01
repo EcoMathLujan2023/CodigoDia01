@@ -248,7 +248,7 @@ end
 P = crec_exp_sto(1,0.1,250)
 plot!(P)
 
-# Ejercicio decrecimiento exponencial estocastico
+# Ejercicio decrecimiento exponencial estocastico, subir a github
 #
 
 # Ejercicio adicional: Hacer que la tasa de nacimiento o mortalidad dependa de un factor externo, por ejemplo la temperatura.
