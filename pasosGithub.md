@@ -2,11 +2,11 @@
 
 * Crear repositorio github en organización 
 
-* Crear proyecto de Julia
-
-    1) Abrir una carpeta para el proyecto (o crear una)
+* Entrar a VSCode Crear proyecto de Julia
 
     2) Clonar el repositorio de github
+
+    1) Elegir la carpeta base, sobre la cual crea una carpeta con el nombre del repositorio
 
     3) Iniciar el REPL (ctrl-shift-p)
 
