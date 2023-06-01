@@ -1,9 +1,9 @@
 
 # Arrancar el interprete de Julia ctrl-shift-p   start REPL
 
-# ir al administrador de paquetes ] activar el proyecto
+# ir al administrador de paquetes ] activar el proyecto `activate .`
 
-# agregar el paquete Plots add Plots
+# agregar el paquete Plots `add Plots`
 
 # ir a la seccion de github de la barra lateral
 
