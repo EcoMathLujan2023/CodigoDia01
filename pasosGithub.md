@@ -8,7 +8,7 @@
 
     1) Elegir la carpeta base, sobre la cual crea una carpeta con el nombre del repositorio
 
-    3) Iniciar el REPL (ctrl-shift-p)
+    3) Iniciar el REPL (ctrl-shift-p) y luego tipear y/o seleccionar `start Julia REPL`
 
 	2) Entrar en el modo `package manager` usando ] (para salir con ctrl-c o backspace)
 
