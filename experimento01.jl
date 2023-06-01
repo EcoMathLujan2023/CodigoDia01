@@ -41,8 +41,12 @@ typeof(mat)
 mat = [10, 10, 10, 10]
 typeof(mat)
 
-mat = [10 ; 10 ; 10; 10 ]
+mat = [10  11 ; 12 13 ]
 typeof(mat)
+
+#
+## Hacer commit ir a la barra lateral al icono de github presionar el boton commit (ctrl-commit)
+#
 
 ## Aleatorios
 
@@ -55,6 +59,9 @@ mat = rand(10,10)
 N = [10.0]
 
 push!(N, 11.0)
+
+length(N)
+size(N)
 
 ## un vector vacio
 
@@ -129,8 +136,12 @@ for i in 1:10
     @info evs[i]
 end
 
-# Ejercicio sumar 10 numeros aleatorios usando un loop
+## Ejercicio llenar un vector con 10  numeros aleatorios usando un loop
 #
+
+Plot(evs)
+
+
 
 ## Funcion crecimiento Aleatorios
 #
@@ -229,3 +240,6 @@ end
 
 P = crec_exp_sto(1,0.1,250)
 plot!(P)
+
+# Ejercicio decrecimiento exponencial estocastico
+#
