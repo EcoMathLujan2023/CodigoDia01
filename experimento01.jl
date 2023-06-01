@@ -5,9 +5,13 @@
 
 # agregar el paquete Plots add Plots
 
-# ir a la seccion de github que tiene un 2
+# ir a la seccion de github de la barra lateral
 
 # ver que los cambios nuevos aparecen en el costado con un marcador vertical
+
+# Hacer commit (ctrl-enter)
+
+# Hacer sync (para sincronizar con el repositorio remoto)
 
 ## Empezamos con el código
 
