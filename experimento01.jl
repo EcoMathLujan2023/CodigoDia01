@@ -195,6 +195,37 @@ function crec_exp_sto(N₀,λ,tfin=100)
     return ts , Ns
 end
 
-P = crec_exp_sto(1,0.1,100)
+P = crec_exp_sto(1,0.1,50)
+plot(P)
+
+P = crec_exp_sto(1,0.1,50)
 plot!(P)
 
+## Repique cada 50
+#
+#  Usamos la misma funcion con otro parametro
+#
+function crec_exp_sto(N₀,λ,tfin=100,rep=50)
+    Ns = [N₀]
+    ts = [0.0]
+    tt = 0.0
+    i  = 2
+    while( tt < tfin)
+        r = rand()
+        tt = ts[i-1] - log(r)/(λ*Ns[i-1])  
+        if tt % rep < 0.2 
+            Nt = N₀
+        else
+            Nt = Ns[i-1] + 1
+        end
+        push!(Ns,Nt)
+        push!(ts,tt)
+        i+=1
+
+    end
+
+    return ts , Ns
+end
+
+P = crec_exp_sto(1,0.1,250)
+plot!(P)
