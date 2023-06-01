@@ -45,8 +45,9 @@ mat = [10  11 ; 12 13 ]
 typeof(mat)
 
 #
-## Hacer commit ir a la barra lateral al icono de github presionar el boton commit (ctrl-commit)
+## Hacer commit ir a la barra lateral al icono de github presionar el boton commit (ctrl-commit es mas facil)
 #
+## Luego Sync Changes
 
 ## Aleatorios
 
@@ -131,16 +132,21 @@ end
 
 ## decimos que nos muestre solamente el elemento i
 evs = Bool[]
-for i in 1:10
+for i in 1:100
     push!(evs,evento_aleatorio(0.1))
     @info evs[i]
 end
 
-## Ejercicio llenar un vector con 10  numeros aleatorios usando un loop
+## Ejercicio llenar un vector con 100  numeros aleatorios usando un loop
 #
 
-Plot(evs)
+# Graficos
+#
+plot(evs)
 
+scatter(evs, legend=false )
+
+scatter!(evs, legend=false )
 
 
 ## Funcion crecimiento Aleatorios
@@ -161,7 +167,8 @@ end
 
 
 ## Ejercicio registrar la posición de 100 caminantes aleatorios en linea inicialmente, luego de 100 pasos.
-
+##
+#
 
 ## Crecimiento exponencial deterministico discreto
 
@@ -242,4 +249,7 @@ P = crec_exp_sto(1,0.1,250)
 plot!(P)
 
 # Ejercicio decrecimiento exponencial estocastico
+#
+
+# Ejercicio adicional: Hacer que la tasa de nacimiento o mortalidad dependa de un factor externo, por ejemplo la temperatura.
 #
